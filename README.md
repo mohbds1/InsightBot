@@ -104,7 +104,7 @@ pip install -r requirements.txt
 
 ## 🗄 MongoDB Setup
 
-1. Start your MongoDB service (local or remote).
+1. Start your MongoDB service.
 
 2. Run initialization script:
 
@@ -118,7 +118,7 @@ python init_schema.py
 python seed_data.py
 ```
 
-4. Import sample articles (choose one option):
+4. Import sample articles.csv (optional — choose one method below):
 
 ### ▶ Regular Import (simple add)
 
@@ -158,21 +158,21 @@ python seed_data.py
 
 ---
 
-## ⚡ Prefect Pipeline
+## ⚡ Perfect Pipeline
 
-1. Start Prefect server (optional for orchestration UI):
+1. Start Perfect server (optional for orchestration UI):
 
 ```bash
 Perfect server start
 ```
 
-2. Run the Prefect flow to orchestrate scraping and processing:
+2. Run the Perfect flow to orchestrate scraping and processing:
 
 ```bash
 python flows/pipeline.py
 ```
 
-3. Monitor and manage pipeline runs via Prefect UI at [http://localhost:4200](http://localhost:4200).
+3. Monitor and manage pipeline runs via Perfect UI at [http://localhost:4200](http://localhost:4200).
 
 ---
 
